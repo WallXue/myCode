@@ -5,7 +5,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	console.log(path.posix.basename());
-  	res.sendfile('E:/myApp/views/index.html');
+  	res.sendfile('E:/gitbase/myBlog/myApp/views/index.html');
 });
 
 module.exports = router;
