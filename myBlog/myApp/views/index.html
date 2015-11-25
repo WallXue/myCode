@@ -11,27 +11,32 @@
         padding-top: 50px;
         font-family: '微软雅黑'
     }
+    
     .starter-template {
         padding: 40px 15px;
         text-align: center;
     }
-    .index-list{
-        padding: 18px
+    
+    .index-list {
+        padding: 18px;
     }
-    .index-list .list-group-item-text{
+    
+    .index-list .list-group-item-text {
         display: inline;
     }
-    .index-list .list-group-item-heading{
+    
+    .index-list .list-group-item-heading {
         margin-bottom: 10px;
     }
-    .index-list .glyphicon{
+    
+    .index-list .glyphicon {
         margin: 3px;
     }
     </style>
 </head>
 
 <body>
-<!--div class="bgg"></div-->
+    <!--div class="bgg"></div-->
     <nav class="navbar navbar-default  navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -41,7 +46,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
                 <a class="navbar-brand" href="/#/index"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span>少年派</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
@@ -57,6 +61,35 @@
     </nav>
     <div data-ng-view>
     </div>
+
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+               模态框（Modal）标题
+            </h4>
+                </div>
+                <div class="modal-body">
+                    在这里添加一些文本
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        提交更改
+                    </button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
 </body>
 <script src="/components/requirejs/require.js" data-main="/javascripts/main.js"></script>
+
 </html>
