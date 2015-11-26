@@ -10,7 +10,8 @@ requirejs.config({
         'jquery': 'components/jquery/dist/jquery',
         'app': 'javascripts/app',
         'controllers': 'javascripts/base/controllers',
-        'allController': 'javascripts/controllers/all'
+        'allController': 'javascripts/controllers/all',
+        'angular-routeConfig': 'javascripts/angular-route.config',
     },
     shim: {
         'angular': {
@@ -35,27 +36,8 @@ requirejs.config({
     deps: ['javascripts/domReady']
 })
 
-require(['app', 'bootstrap','bootstrap-tooltip','bootstrap-popover'], function(app) {
-    app.config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/index', {
-            templateUrl: 'html/index.html',
-            controller: 'indexController'
-        });
+require(['jquery', 'bootstrap','bootstrap-tooltip','bootstrap-popover'], function($) {
 
-        $routeProvider.when('/list', {
-            templateUrl: 'html/list.html',
-            controller: 'listController'
-        });
-
-        $routeProvider.otherwise({
-            redirectTo: '/index'
-        });
-    }]);
-
-});
-
-
-require(['jquery', 'requirejs-domready'], function($) {
     $(function() {
         $(".pc-navbar-nav > li").click(function() {
             $(".pc-navbar-nav > li").removeClass('active');

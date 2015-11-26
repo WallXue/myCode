@@ -32,6 +32,12 @@
     .index-list .glyphicon {
         margin: 3px;
     }
+    
+    .hide-overflow-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
     </style>
 </head>
 
@@ -61,8 +67,6 @@
     </nav>
     <div data-ng-view>
     </div>
-
-
     <!-- 模态框（Modal） -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
