@@ -7,6 +7,9 @@
     "angular-route": "~1.4.8",
     "requirejs-domready": "~2.0.1",
     "angular-bootstrap": "~0.14.3",
-    "bootstrap": "~3.3.5"
+    "angular-strap": "~2.3.6",
+    "bootstrap": "~3.3.6",
+    "angular-motion": "~0.4.3",
+    "bootstrap-additions": "~0.3.1"
   }
 }

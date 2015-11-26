@@ -3,10 +3,10 @@ requirejs.config({
     paths: {
         'angular': 'components/angular/angular',
         'angular-route': 'components/angular-route/angular-route',
+        'angular-animate': 'components/angular-animate/angular-animate',
+        'angular-strap': 'components/angular-strap/dist/angular-strap',
+        'angular-strap.tpl': 'components/angular-strap/dist/angular-strap.tpl',
         'requirejs-domready': 'components/requirejs-domready/domReady',
-        'bootstrap': 'components/bootstrap/dist/js/bootstrap',
-        'bootstrap-tooltip': 'components/bootstrap/js/tooltip',
-        'bootstrap-popover': 'components/bootstrap/js/popover',
         'jquery': 'components/jquery/dist/jquery',
         'app': 'javascripts/app',
         'controllers': 'javascripts/base/controllers',
@@ -20,14 +20,23 @@ requirejs.config({
         'angular-route': {
             deps: ['angular']
         },
+        'angular-strap': {
+            deps: ['angular']
+        },
+        'angular-animate': {
+            deps: ['angular']
+        },
+        'angular-strap.tpl': {
+            deps: ['angular']
+        },
         'bootstrap': {
             deps: ['jquery']
         },
         'bootstrap-tooltip': {
-            deps: ['jquery','bootstrap']
+            deps: ['jquery', 'bootstrap']
         },
         'bootstrap-popover': {
-            deps: ['jquery','bootstrap']
+            deps: ['jquery', 'bootstrap']
         },
         'jquery': {
             exports: "$"
@@ -36,7 +45,7 @@ requirejs.config({
     deps: ['javascripts/domReady']
 })
 
-require(['jquery', 'bootstrap','bootstrap-tooltip','bootstrap-popover'], function($) {
+require(['jquery'], function($) {
 
     $(function() {
         $(".pc-navbar-nav > li").click(function() {

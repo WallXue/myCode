@@ -2,30 +2,34 @@
     <div class="page-header">
         <h1>于我，过去 <small>现在以及未来</small></h1>
     </div>
+    <button type="button" class="btn btn-lg btn-primary" data-html="sss" data-animation="am-fade-and-scale" data-placement="center" bs-modal="modal">Click to toggle modal
+        <br>
+        <small>(using an object)</small>
+    </button>
+
+    <button type="button" class="btn btn-lg btn-primary" data-template='/html/test.html' bs-aside="aside">Click to toggle aside
+  <br>
+  <small>(using an object)</small>
+</button>
+
+
+
     <div class="row">
         <div class="col-lg-8 col-xs-12">
             <h2 class="text-muted">最<small class="text-muted">新文章/<a href="#" class="text-muted">更多</a></small></h2>
-   
             <div class="list-group">
                 <a ng-repeat="article in articles" class="list-group-item index-list">
                     <h4 ng-click="test()" class="list-group-item-heading">{{article.title}}</h4>
                     <p class="hide-overflow-text">{{article.abstract}}</p>
-                    <p class="list-group-item-text list-item-label" style="line-height: 20px">
-                        <label>
-                            <span class="label label-default">默认分类</span>
-                        </label>
-                        <label>
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
-                            {{article.views}}
-                        </label>
-                        <label ng-click="bingo(article)"  data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 
-                            {{article.bingo}}
-                            
-                        </label>
-
-
-                        <label class="pull-right">2015-11-25</label>
+                    <p>
+                        <span class="pull-right"><small>少年派</small></span>
+                    </p>
+                    <div class="clearfix"></div>
+                    <p class="list-group-item-text">
+                        <span class="label label-default">默认分类</span>
+                        <span class="label label-default glyphicon glyphicon-search" aria-hidden="true">{{article.views}}</span>
+                        <span ng-click="" class="label label-default glyphicon glyphicon-thumbs-up" aria-hidden="true">{{article.bingo}}</span>
+                        <span class="pull-right"><small>2015-11-25</small></span>
                     </p>
                 </a>
             </div>
@@ -47,7 +51,7 @@
                         <h5>少年派：<small>别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼</small></h5>
                     </div>
                     <hr>
-                    <div class="caption">
+                    <div class="caption" id="test">
                         <h5>少年派：<small>别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼别问我有多叼</small></h5>
                     </div>
                     <hr>
