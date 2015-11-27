@@ -1,4 +1,5 @@
 define(['app'], function(app) {
+
     app.config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/index', {
             templateUrl: 'html/index.html',
@@ -14,4 +15,6 @@ define(['app'], function(app) {
             redirectTo: '/index'
         });
     }]);
+
+
 });

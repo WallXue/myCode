@@ -1,13 +1,13 @@
-define(['allController', 'angular-route', 'angular-strap', 'angular-strap.tpl', 'angular-animate'], function() {
+define(['angular', 'jquery', 'allController', 'allServices', 'angular-route', 'angular-strap.tpl', 'angular-strap', 'angular-animate'], function() {
     return angular.module('app', [
+        'mgcrea.ngStrap.alert',
+        'mgcrea.ngStrap.tooltip',
+        'mgcrea.ngStrap.aside',
+        'mgcrea.ngStrap.modal',
         'controllers1',
-        'ngRoute',
-        // 'ngSanitize',
+        'services1',
         'mgcrea.ngStrap',
         'ngAnimate',
-        'mgcrea.ngStrap.modal',
-        'mgcrea.ngStrap.aside',
-        'mgcrea.ngStrap.tooltip',
-        'mgcrea.ngStrap.alert'
+        'ngRoute'
     ]);
 });

@@ -1,17 +1,10 @@
 define(["controllers"], function(controllers) {
-    controllers.controller('indexController', function($scope, $modal) {
-
-        $scope.modal = {
-            "title": "Title",
-            "content": "Hello Modal<br />This is a multiline message!"
-        };
-
-        $scope.aside = {
-            "title": "Title",
-            'contentTemplate' :true,
-            "content": "Hello Modal<br />This is a multiline message!"
-        };
-
+    controllers.controller('indexController', function($scope, $modal, TipService) {
+        // TipService.showTip('bom shakala~~welcome~~~');
+        // $scope.modal = {
+        //     "title": "Title",
+        //     "content": "Hello Modal<br />This is a multiline message!"
+        // };
 
         $scope.articles = [{
             id: 1232321,
@@ -45,8 +38,8 @@ define(["controllers"], function(controllers) {
 
         $scope.init = function() {
             console.log("init....");
-            $('#myModal').unbind('shown.bs.modal').bind('shown.bs.modal', function() {
-                alert("test");
+            $('#myCarousel').carousel({
+                interval: 5000
             })
         }
 
@@ -54,6 +47,13 @@ define(["controllers"], function(controllers) {
             article.bingo = article.bingo + 1;
         }
 
-        $scope.test = function() {}
+        $scope.showArticle = function(article) {
+            $modal({
+                "html": true,
+                "animation": 'am-fade',
+                "title": article.title,
+                "content": article.content
+            });
+        }
     });
 });
