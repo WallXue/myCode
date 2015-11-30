@@ -57,7 +57,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-var server = http.createServer(app).listen('80', function(){
+var server = http.createServer(app).listen('8080', function(){
 	console.log('服务启动成功...');
 });
 

@@ -5,78 +5,54 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/components/angular-motion/dist/angular-motion.css">
     <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/components/bootstrap-additions/dist/bootstrap-additions.css">
-    <style type="text/css">
-    body {
-        padding-top: 50px;
-        font-family: '微软雅黑';
+    <link rel="stylesheet" href="/components/angular-motion/dist/angular-motion.css">
+    <!--  <script type="text/javascript">
+    window.onload = function() {
+        setTimeout(function() {
+            var loading = document.getElementById("loading");
+            loading.parentNode.removeChild(loading);
+            document.getElementById('hidden-dive').className = "";
+        }, 1200);
     }
-    
-    .starter-template {
-        padding: 40px 15px;
-        text-align: center;
-    }
-    
-    .index-list {
-        padding: 18px;
-    }
-    
-    .hide-overflow-text {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-    
-    .carousel-inner .item p {
-        /*width:300px;*/
-        width: 70%;
-        font-size: 30px;
-        text-align: center;
-    }
-    
-    .carousel-inner .item {
-        background-color: #fff;
-        height: 400px;
-        padding-top: 140px;
-    }
-
-    .carousel-indicators li{
-        border:1px solid #777;
-    }
-    .carousel-indicators .active {
-        background-color:#777;
-    }
-    </style>
+    </script> -->
 </head>
 
 <body>
-    <!--div class="bgg"></div-->
-    <nav class="navbar navbar-default  navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/#/index"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span>少年派</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav pc-navbar-nav">
-                    <li class="active"><a href="/#/index">首页</a></li>
-               <!--      <li><a href="#list">我的文章</a></li>
+    <div id="loading" class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+    </div>
+    <div id="hidden-dive" class="hidden">
+        <nav class="navbar navbar-default  navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/#/index"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span>少年派</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav pc-navbar-nav">
+                        <li class="active"><a href="/#/index">首页</a></li>
+                        <!--      <li><a href="#list">我的文章</a></li>
                     <li><a href="#about">关于我</a></li>
                     <li><a href="#contact">balabala</a></li> -->
-                </ul>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
-            <!--/.nav-collapse -->
+        </nav>
+        <div id="alerts-container"></div>
+        <div data-ng-view>
         </div>
-    </nav>
-    <div id="alerts-container"></div>
-    <div data-ng-view>
     </div>
 </body>
 <script src="/components/requirejs/require.js" data-main="/javascripts/main.js"></script>
