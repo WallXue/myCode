@@ -5,6 +5,6 @@ define(['angular', 'requirejs-domready', 'angular-routeConfig'], function(angula
             var loading = document.getElementById("loading");
             loading.parentNode.removeChild(loading);
             document.getElementById('hidden-dive').className = "";
-        }, 1200);
+        }, 100);
     });
 });

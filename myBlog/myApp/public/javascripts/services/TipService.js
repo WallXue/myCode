@@ -9,7 +9,7 @@ define(["services"], function(services) {
                     content: tip,
                     placement: 'top',
                     type: 'info',
-                    duration: 2,
+                    duration: 5,
                     show: true
                 })
             }, 200)

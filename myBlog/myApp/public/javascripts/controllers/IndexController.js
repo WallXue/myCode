@@ -1,10 +1,10 @@
 define(["controllers"], function(controllers) {
     controllers.controller('indexController', function($scope, $modal, TipService) {
-        // TipService.showTip('bom shakala~~welcome~~~');
-        // $scope.modal = {
-        //     "title": "Title",
-        //     "content": "Hello Modal<br />This is a multiline message!"
-        // };
+        TipService.showTip('bom shakala~~welcome~~~');
+        $scope.modal = {
+            "title": "Title",
+            "content": "Hello Modal<br />This is a multiline message!"
+        };
 
         $scope.articles = [{
             id: 1232321,
