@@ -1,6 +1,5 @@
 define(["services"], function(services) {
     services.service('TipService', function($alert) {
-        console.info('init...TipService');
         this.showTip = function(tip) {
             setTimeout(function() {
                 $alert({

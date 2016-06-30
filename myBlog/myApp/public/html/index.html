@@ -1,3 +1,5 @@
+<mynav/>
+
 <div id="myCarousel" class="carousel slide">
     <!-- 轮播（Carousel）指标 -->
     <ol class="carousel-indicators">
@@ -23,54 +25,25 @@
 <div class="container" ng-init="init()">
     <div class="page-header">
         <h1>于我，过去 <small>现在以及未来</small></h1>
+        
     </div>
     <div class="row">
         <div class="col-lg-8 col-xs-12">
             <h2 class="text-muted">最<small class="text-muted">新文章/<a class="text-muted" data-template-url="/html/test.html" data-placement="left" data-animation="am-slide-left" bs-aside="aside" data-container="body">更多</a></small></h2>
             <div class="list-group">
-                <a ng-click="showArticle(article)" ng-repeat="article in articles" class="list-group-item index-list">
-                    <h4 ng-click="test()" class="list-group-item-heading">{{article.title}}</h4>
-                    <p class="hide-overflow-text">{{article.abstract}}</p>
-                    <p>
-                        <span class="pull-right"><small>少年派</small></span>
-                    </p>
-                    <div class="clearfix"></div>
-                    <p class="list-group-item-text">
-                        <span class="label label-default">默认分类</span>
-                        <span ng-bind="article.views" class="label label-default glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <span ng-click="" ng-bind="article.bingo" class="label label-default glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                        <span class="pull-right"><small>2015-11-25</small></span>
-                    </p>
-                </a>
+                <div ng-click="showArticle(article)" ng-repeat="article in articles" class="list-group-item ">
+                        <h4 ng-click="test()" class="list-group-item-heading">{{article.title}}</h4>
+                        <p class="hide-overflow-text">{{article.abstract}}</p>
+                        <p>
+                            <span class="pull-right"><small>少年派</small></span>
+                        </p>
+                 </div>
             </div>
         </div>
         <div class="col-lg-4 col-xs-12">
             <h2 class="text-muted">我<small class="text-muted">的动态/<a class="text-muted" data-template-url="/html/test.html" data-placement="right" data-animation="am-slide-right" bs-aside="aside" data-container="body">更多</a></small></h2>
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div class="caption">
-                        <h5><span class="glyphicon glyphicon-user" aria-hidden="true"></span>少年派：<small>小郭画了朵红花，小葛画了朵黄花，小郭想拿他的红花换小葛的黄花，小葛把他的黄花换了小郭的红花。</small></h5>
-                    </div>
-                    <hr>
-                    <div class="caption">
-                        <h5>少年派：<small>小郭画了朵红花，小葛画了朵黄花，小郭想拿他的红花换小葛的黄花，小葛把他的黄花换了小郭的红花。</small></h5>
-                    </div>
-                    <hr>
-                    <div class="caption">
-                        <h5>少年派：<small>小郭画了朵红花，小葛画了朵黄花，小郭想拿他的红花换小葛的黄花，小葛把他的黄花换了小郭的红花。</small></h5>
-                    </div>
-                    <hr>
-                    <div class="caption" id="test">
-                        <h5>少年派：<small>小郭画了朵红花，小葛画了朵黄花，小郭想拿他的红花换小葛的黄花，小葛把他的黄花换了小郭的红花。</small></h5>
-                    </div>
-                    <hr>
-                    <div class="caption">
-                        <h5>少年派：<small>小郭画了朵红花，小葛画了朵黄花，小郭想拿他的红花换小葛的黄花，小葛把他的黄花换了小郭的红花。</small></h5>
-                        <img class="img-thumbnail" width="100px" src="/images/automated-insurance-marketing.jpg" />
-                        <img class="img-thumbnail" width="100px" src="/images/head.png" />
-                        <img class="img-thumbnail" width="100px" src="/images/automated-insurance-marketing.jpg" />
-                        <img class="img-thumbnail" width="100px" src="/images/automated-insurance-marketing.jpg" />
-                    </div>
                 </div>
             </div>
         </div>
@@ -86,3 +59,9 @@
         </div>
     </div>
 </div>
+
+
+<myloginmodal/>
+<registermodal/>
+
+

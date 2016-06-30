@@ -17,6 +17,8 @@ requirejs.config({
         'allController': 'javascripts/controllers/all',
         'allServices': 'javascripts/services/all',
         'angular-routeConfig': 'javascripts/angular-route.config',
+
+        'directives': 'javascripts/base/directives'
     },
     shim: {
         'angular': {
