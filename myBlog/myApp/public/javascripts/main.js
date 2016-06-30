@@ -24,6 +24,9 @@ requirejs.config({
         'angular': {
             exports: "angular"
         },
+        'app': {
+            deps: ['angular']
+        },
         'angular-route': {
             deps: ['angular']
         },
@@ -47,6 +50,12 @@ requirejs.config({
         },
         'controllers':{
             deps: ['angular']
+        },
+        'directives' : {
+            deps: ['app']
+        },
+        'angular-routeConfig' : {
+            deps: ['app']
         }
     },
     deps: ['javascripts/domReady']
