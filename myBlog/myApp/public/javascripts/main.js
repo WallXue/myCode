@@ -64,9 +64,18 @@ requirejs.config({
 require(['jquery','bootstrap'], function($) {
 
     $(function() {
+
+        $(".pc-navbar-nav > li").removeClass('active');
+
+        var curUrl = window.location.hash;
+        $(".pc-navbar-nav > li > a[href='"+curUrl+"']").parent().addClass('active');
+        console.info(window.href);
+
         $(".pc-navbar-nav > li").click(function() {
             $(".pc-navbar-nav > li").removeClass('active');
             $(this).addClass('active');
         });;
+
+
     })
 });

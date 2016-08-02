@@ -1,5 +1,5 @@
 define([
 	'javascripts/controllers/IndexController',
-	'javascripts/controllers/ListController'
+	'javascripts/controllers/OtherController'
 ], 
 function(){});

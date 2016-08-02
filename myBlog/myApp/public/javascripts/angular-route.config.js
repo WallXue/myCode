@@ -6,9 +6,9 @@ define(['app'], function(app) {
             controller: 'indexController'
         });
 
-        $routeProvider.when('/list', {
-            templateUrl: 'html/list.html',
-            controller: 'listController'
+        $routeProvider.when('/other', {
+            templateUrl: 'html/other.html',
+            controller: 'otherController'
         });
 
         $routeProvider.otherwise({

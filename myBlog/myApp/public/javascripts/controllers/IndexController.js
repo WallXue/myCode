@@ -11,10 +11,6 @@ define(["controllers"], function(controllers) {
             })
         }
 
-        $scope.bingo = function(article) {
-            article.bingo = article.bingo + 1;
-        }
-
         $scope.showArticle = function(article) {
             $modal({
                 "html": true,
